@@ -1,5 +1,5 @@
 {
-  "name": "dss/m2-discountlimit",
+  "name": "dss/m2-discount-limiter",
   "description": "Discount Limiter",
   "type": "magento2-module",
   "version": "0.0.1",
