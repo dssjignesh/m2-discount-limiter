@@ -70,9 +70,9 @@ class Config implements ConfigInterface
      * Is enable
      *
      * @param mixed $storeId
-     * @return void
+     * @return bool
      */
-    public function isEnabled($storeId = null)
+    public function isEnabled($storeId = null): bool
     {
         return $this->getConfigFlag(self::XML_PATH_ENABLED, $storeId);
     }
@@ -81,9 +81,9 @@ class Config implements ConfigInterface
      * Is Debug Enabled
      *
      * @param mixed $storeId
-     * @return void
+     * @return bool
      */
-    public function isDebugEnabled($storeId = null)
+    public function isDebugEnabled($storeId = null): bool
     {
         return $this->getConfigFlag(self::XML_PATH_DEBUG, $storeId);
     }

@@ -26,7 +26,7 @@ class Logger extends \Monolog\Logger
      * @param  mixed $message
      * @return void
      */
-    public function customLog($message)
+    public function customLog($message): void
     {
         try {
             if ($message === null) {
