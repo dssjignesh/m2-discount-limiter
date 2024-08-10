@@ -54,7 +54,7 @@ class SetMaxDiscountPlugin
      * @param mixed     $rule
      * @param mixed     $item
      * @param mixed     $qty
-     * @return void
+     * @return mixed
      */
     public function aroundCalculate(
         ByPercent $subject,
@@ -62,7 +62,7 @@ class SetMaxDiscountPlugin
         $rule,
         $item,
         $qty
-    ) {
+    ): mixed {
         $discountData = $proceed($rule, $item, $qty);
         if (! $this->discountLimitHelper->isActive()) {
             return $discountData;

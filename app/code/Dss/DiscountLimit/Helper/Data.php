@@ -47,9 +47,9 @@ class Data extends AbstractHelper
     /**
      * Get Config Helper
      *
-     * @return void
+     * @return mixed
      */
-    public function getConfigHelper()
+    public function getConfigHelper(): mixed
     {
         return $this->config;
     }
@@ -57,9 +57,9 @@ class Data extends AbstractHelper
     /**
      * Get base Url
      *
-     * @return void
+     * @return string
      */
-    public function getBaseUrl()
+    public function getBaseUrl(): string
     {
         return $this->storeManager->getStore()->getBaseUrl(
             \Magento\Framework\UrlInterface::URL_TYPE_WEB,
@@ -70,9 +70,9 @@ class Data extends AbstractHelper
     /**
      * Is Active
      *
-     * @return void
+     * @return bool
      */
-    public function isActive()
+    public function isActive(): bool
     {
         return $this->config->isEnabled();
     }
